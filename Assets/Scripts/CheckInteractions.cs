@@ -1,18 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+//using TMPro;
 
 public class CheckInteractions : MonoBehaviour {
 
     public float interactDistance = 2.0f;
-    public TextMeshProUGUI interactControls;
+    //public TextMeshProUGUI interactControls;
 
     private bool isInteractionAvailable = false;
 
     private void Start()
     {
-        interactControls.enabled = false;
+        //interactControls.enabled = false;
     }
 
     private void FixedUpdate()
@@ -24,12 +24,12 @@ public class CheckInteractions : MonoBehaviour {
         if (Physics.Raycast(transform.position, inFront, out hit, interactDistance) && hit.transform.tag == "Interactable")
         {
             isInteractionAvailable = true;
-            interactControls.enabled = true;
+            //interactControls.enabled = true;
         }
         if (!Physics.Raycast(transform.position, inFront, out hit, interactDistance))
         {
             isInteractionAvailable = false;
-            interactControls.enabled = false;
+            //interactControls.enabled = false;
         }
 
         // Checks whether above boolean is true and the "E" key is pressed down.
