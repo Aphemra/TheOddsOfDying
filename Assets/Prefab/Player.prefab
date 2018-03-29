@@ -260,7 +260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4922230392501934}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: CameraFollow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2008,7 +2008,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1988723091722488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.47839928, y: -7.632349, z: 4.864233}
+  m_LocalPosition: {x: 0, y: -7.883, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4982316779277826}
@@ -2434,7 +2434,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1233831687672878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.23, z: 0}
+  m_LocalPosition: {x: 0.273, y: 1.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4697638588230972}
@@ -2584,8 +2584,8 @@ Camera:
   m_GameObject: {fileID: 1748905558704166}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -2671,16 +2671,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camMoveSpeed: 120
   camFollowObject: {fileID: 1233831687672878}
-  clamp: 55
+  verticalClamp: 55
+  horizontalClamp: 85
   inputSensitivity: 150
-  camObject: {fileID: 0}
-  playerObject: {fileID: 0}
-  mouseX: 0
-  mouseY: 0
-  finalInputX: 0
-  finalInputZ: 0
-  smoothingX: 0
-  smoothingY: 0
 --- !u!114 &114090396803527082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2723,7 +2716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minDistance: 0.2
-  maxDistance: 2.5
+  maxDistance: 1.5
   smoothing: 5
   dollyDirectionAdjusted: {x: 0, y: 0, z: 0}
   distance: 0
@@ -2733,7 +2726,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1748905558704166}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 

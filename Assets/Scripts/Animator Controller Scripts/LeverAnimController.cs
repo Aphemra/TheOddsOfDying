@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(InteractionState))]
 public class LeverAnimController : MonoBehaviour {
 
     Animator leverAnim;
