@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/Third Person Camera Testing.unity
-    guid: 40197ce57f9dc704abfcf4c44672e8c9
+    path: Assets/_Scenes/Interaction Testing.unity
+    guid: 1c20d349adf41444288142439229e825
