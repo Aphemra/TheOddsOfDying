@@ -11,7 +11,6 @@ public class CamFollowHandler : MonoBehaviour {
     public GameObject camFollowObject;
     Vector3 followPosition;
     public float verticalClamp = 55.0f;
-    public float horizontalClamp = 85.0f;
     public float inputSensitivity = 150.0f;
     GameObject camObject;
     GameObject playerObject;
@@ -60,8 +59,6 @@ public class CamFollowHandler : MonoBehaviour {
         // Clamps the X rotation within parameters to prevent the camera from moving
         // outside our set angles.
         rotationX = Mathf.Clamp(rotationX, -verticalClamp, verticalClamp);
-        rotationY = Mathf.Clamp(rotationY, -horizontalClamp, horizontalClamp);
-
         // This actually rotates the camera by setting it's transform.rotation to a quaternion.
         Quaternion localRotation = Quaternion.Euler(rotationX, rotationY, 0.0f);
         transform.rotation = localRotation;
