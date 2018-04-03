@@ -240,6 +240,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &228305940 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1233831687672878, guid: 7f856152fa77903478fa361cea759739,
+    type: 2}
+  m_PrefabInternal: {fileID: 640005080}
 --- !u!1 &432118348
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,6 +360,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b186ffbe734e8324e8b96b836daeaad2, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &579358003 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1257506652243962, guid: 7f856152fa77903478fa361cea759739,
+    type: 2}
+  m_PrefabInternal: {fileID: 640005080}
 --- !u!1001 &640005080
 Prefab:
   m_ObjectHideFlags: 0
@@ -394,13 +404,30 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4922230392501934, guid: 7f856152fa77903478fa361cea759739, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.252
-      objectReference: {fileID: 0}
-    - target: {fileID: 4922230392501934, guid: 7f856152fa77903478fa361cea759739, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.313
+    - target: {fileID: 114853317529421684, guid: 7f856152fa77903478fa361cea759739,
+        type: 2}
+      propertyPath: interactControls
+      value: 
+      objectReference: {fileID: 713482590}
+    - target: {fileID: 114853317529421684, guid: 7f856152fa77903478fa361cea759739,
+        type: 2}
+      propertyPath: reticlePanel
+      value: 
+      objectReference: {fileID: 941407207}
+    - target: {fileID: 114045748845740732, guid: 7f856152fa77903478fa361cea759739,
+        type: 2}
+      propertyPath: camFollowObject_NormalMode
+      value: 
+      objectReference: {fileID: 579358003}
+    - target: {fileID: 114045748845740732, guid: 7f856152fa77903478fa361cea759739,
+        type: 2}
+      propertyPath: camFollowObject_InteractionMode
+      value: 
+      objectReference: {fileID: 228305940}
+    - target: {fileID: 114853317529421684, guid: 7f856152fa77903478fa361cea759739,
+        type: 2}
+      propertyPath: interactDistance
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f856152fa77903478fa361cea759739, type: 2}
@@ -575,24 +602,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.48, y: 0.43, z: 0.75}
   m_Center: {x: 0, y: 0.1, z: 0.06}
---- !u!1 &829298949 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1748905558704166, guid: 7f856152fa77903478fa361cea759739,
-    type: 2}
-  m_PrefabInternal: {fileID: 640005080}
---- !u!114 &829298957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 829298949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fbd02991446ffe41bb946c8d7b79421, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactDistance: 2
-  interactControls: {fileID: 713482590}
 --- !u!1 &941407207
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,6 +670,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 941407207}
+--- !u!1 &1138468911 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1273154258943924, guid: 7f856152fa77903478fa361cea759739,
+    type: 2}
+  m_PrefabInternal: {fileID: 640005080}
 --- !u!1 &1457914882
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,6 +816,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce62ae6bdd0e8014ea8de486ba8cee9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1138468911}
+  reticulePanel: {fileID: 941407207}
   cursorVisible: 0
 --- !u!4 &1512301467
 Transform:

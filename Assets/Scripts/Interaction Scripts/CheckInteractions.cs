@@ -7,6 +7,7 @@ public class CheckInteractions : MonoBehaviour {
 
     public float interactDistance = 4.0f;
     public TextMeshProUGUI interactControls;
+    public GameObject reticlePanel;
 
     Ray interactionRay;
     Camera camera;
@@ -26,12 +27,14 @@ public class CheckInteractions : MonoBehaviour {
         // Checks if there is an object in front of the player and sets a boolean accordingly
         if (Physics.Raycast(interactionRay, out hit, interactDistance) && hit.transform.tag == "Interactable")
         {
+            reticlePanel.SetActive(true);
             isInteractionAvailable = true;
             interactControls.enabled = true;
             Debug.Log("INTERACTING");
         }
         else // if (!Physics.Raycast(interactionRay, out hit, interactDistance))
         {
+            reticlePanel.SetActive(true);
             isInteractionAvailable = false;
             interactControls.enabled = false;
             Debug.Log("NOT INTERACTING");
@@ -39,7 +42,7 @@ public class CheckInteractions : MonoBehaviour {
 
         // Checks whether above boolean is true and the "E" key is pressed down.
         // If both are true, it sets the state of the interactable object as
-        // the opposite of it's previous state. (False is true, true if false)
+        // the opposite of it's previous state. (False if true, true if false)
         if (Input.GetButtonDown("Interact") && isInteractionAvailable)
         {
             

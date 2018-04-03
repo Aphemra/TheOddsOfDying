@@ -8,7 +8,8 @@ public class CamFollowHandler : MonoBehaviour {
     // the 4th axis is Right Stick Horizontal and the 5th axis is Right Stick Vertical.
 
     public float camMoveSpeed = 120.0f;
-    public GameObject camFollowObject;
+    public GameObject camFollowObject_NormalMode;
+    public GameObject camFollowObject_InteractionMode;
     Vector3 followPosition;
     public float verticalClamp = 55.0f;
     public float inputSensitivity = 150.0f;
@@ -18,9 +19,11 @@ public class CamFollowHandler : MonoBehaviour {
     float mouseY;
     float finalInputX;
     float finalInputZ;
+    Transform toFollow;
 
     private float rotationX = 0.0f;
     private float rotationY = 0.0f;
+    private bool isInInteractionMode = false;
 
     void Start ()
     {
@@ -58,6 +61,12 @@ public class CamFollowHandler : MonoBehaviour {
         // This actually rotates the camera by setting it's transform.rotation to a quaternion.
         Quaternion localRotation = Quaternion.Euler(rotationX, rotationY, 0.0f);
         transform.rotation = localRotation;
+
+        // Check for interaction mode
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            isInInteractionMode = !isInInteractionMode;
+        }
     }
 
     void LateUpdate ()
@@ -69,7 +78,10 @@ public class CamFollowHandler : MonoBehaviour {
     void UpdateCamera()
     {
         // Sets what object to follow with the camera
-        Transform toFollow = camFollowObject.transform;
+        if (!isInInteractionMode)
+            toFollow = camFollowObject_NormalMode.transform;
+        else if (isInInteractionMode)
+            toFollow = camFollowObject_InteractionMode.transform;
 
         // Moves the camera towards the object that it is following
         float takeStep = camMoveSpeed * Time.deltaTime;
