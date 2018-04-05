@@ -321,10 +321,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1163077140194070, guid: 2c3b68bb08f3eb247afe8dad6851e9b7, type: 2}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 114006400831694130, guid: 2c3b68bb08f3eb247afe8dad6851e9b7,
         type: 2}
       propertyPath: m_havePropertiesChanged
@@ -334,6 +330,35 @@ Prefab:
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163077140194070, guid: 2c3b68bb08f3eb247afe8dad6851e9b7, type: 2}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 114156323970994264, guid: 2c3b68bb08f3eb247afe8dad6851e9b7,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114156323970994264, guid: 2c3b68bb08f3eb247afe8dad6851e9b7,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114156323970994264, guid: 2c3b68bb08f3eb247afe8dad6851e9b7,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114156323970994264, guid: 2c3b68bb08f3eb247afe8dad6851e9b7,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114156323970994264, guid: 2c3b68bb08f3eb247afe8dad6851e9b7,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c3b68bb08f3eb247afe8dad6851e9b7, type: 2}
@@ -358,11 +383,6 @@ BoxCollider:
 --- !u!1 &941407207 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1994865087886956, guid: 2c3b68bb08f3eb247afe8dad6851e9b7,
-    type: 2}
-  m_PrefabInternal: {fileID: 640005080}
---- !u!1 &1138468911 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1110012376909936, guid: 2c3b68bb08f3eb247afe8dad6851e9b7,
     type: 2}
   m_PrefabInternal: {fileID: 640005080}
 --- !u!1001 &1451059379
@@ -408,7 +428,7 @@ Prefab:
         type: 2}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1138468911}
+      objectReference: {fileID: 2067795529}
     - target: {fileID: 114749363063836798, guid: f0483f769b612624d866eb90a898da86,
         type: 2}
       propertyPath: reticulePanel
@@ -617,3 +637,8 @@ Transform:
   m_Father: {fileID: 1487420853}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2067795529 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1754178448669170, guid: 2c3b68bb08f3eb247afe8dad6851e9b7,
+    type: 2}
+  m_PrefabInternal: {fileID: 640005080}

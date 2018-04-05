@@ -37,7 +37,6 @@ public class GameController : MonoBehaviour
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out hit))
         {
-            Debug.Log(hit.collider.name);
 
             if (hit.collider.name == player.name)
                 reticulePanel.SetActive(false);

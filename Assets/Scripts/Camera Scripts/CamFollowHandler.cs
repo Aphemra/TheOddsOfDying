@@ -7,6 +7,8 @@ public class CamFollowHandler : MonoBehaviour {
     // In input settings, for controller support with the right analog stick,
     // the 4th axis is Right Stick Horizontal and the 5th axis is Right Stick Vertical.
 
+    public float modeChangeSmoothing = 1.0f;
+
     public float camMoveSpeed = 120.0f;
     public GameObject camFollowObject_NormalMode;
     public GameObject camFollowObject_InteractionMode;
@@ -79,9 +81,14 @@ public class CamFollowHandler : MonoBehaviour {
     {
         // Sets what object to follow with the camera
         if (!isInInteractionMode)
+        {
             toFollow = camFollowObject_NormalMode.transform;
+
+        }
         else if (isInInteractionMode)
+        {
             toFollow = camFollowObject_InteractionMode.transform;
+        }
 
         // Moves the camera towards the object that it is following
         float takeStep = camMoveSpeed * Time.deltaTime;
