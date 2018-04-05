@@ -151,7 +151,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-  m_LocalPosition: {x: 0.10452986, y: -45.266113, z: -14.087498}
+  m_LocalPosition: {x: 0.10452986, y: -32.24, z: -14.087498}
   m_LocalScale: {x: 0.7205505, y: 1, z: 2.0589638}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -164,7 +164,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4823895, y: 44.934513, z: -1.1232247}
+  m_LocalPosition: {x: 199.86, y: 31.2, z: 762}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400014}
@@ -210,7 +210,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00031971931, y: -45.19016, z: -3.035695}
+  m_LocalPosition: {x: -0.00031971931, y: -31.87, z: -3.035695}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -223,7 +223,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04165125, y: -46.212612, z: -6.1451526}
+  m_LocalPosition: {x: -0.04165125, y: -33.12, z: -6.1451526}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -249,7 +249,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.16010022, y: -46.07189, z: -5.8055263}
+  m_LocalPosition: {x: 0.16010022, y: -33.04, z: -5.8055263}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -267,19 +267,19 @@ ParticleAnimator:
     rgba: 16777215
   colorAnimation[1]:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 1258291199
   colorAnimation[2]:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   colorAnimation[3]:
     serializedVersion: 2
-    rgba: 3036676095
+    rgba: 16777215
   colorAnimation[4]:
     serializedVersion: 2
     rgba: 184549375
   worldRotationAxis: {x: 0, y: 0, z: 0}
   localRotationAxis: {x: 0, y: 0, z: 0}
-  sizeGrow: 1
+  sizeGrow: 0.5
   rndForce: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   damping: 1
@@ -297,13 +297,13 @@ ParticleAnimator:
     rgba: 8481104
   colorAnimation[1]:
     serializedVersion: 2
-    rgba: 4289300325
+    rgba: 581535589
   colorAnimation[2]:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   colorAnimation[3]:
     serializedVersion: 2
-    rgba: 3036676095
+    rgba: 570425343
   colorAnimation[4]:
     serializedVersion: 2
     rgba: 184549375
@@ -327,13 +327,13 @@ ParticleAnimator:
     rgba: 184549375
   colorAnimation[1]:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 771751935
   colorAnimation[2]:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 754974719
   colorAnimation[3]:
     serializedVersion: 2
-    rgba: 3570576000
+    rgba: 1171434112
   colorAnimation[4]:
     serializedVersion: 2
     rgba: 4294967295
@@ -354,10 +354,10 @@ ParticleAnimator:
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 905969663
   colorAnimation[1]:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 1308622847
   colorAnimation[2]:
     serializedVersion: 2
     rgba: 3305111551
@@ -531,7 +531,7 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 264ea8ffc20b45742804cb7fa6a0010d, type: 2}
+  - {fileID: 2100000, guid: e633a20421c47426aa04444234225b69, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

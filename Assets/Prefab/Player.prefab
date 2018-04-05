@@ -1743,7 +1743,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1257506652243962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.313, z: 0}
+  m_LocalPosition: {x: -0, y: 1.197, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4697638588230972}
@@ -2037,7 +2037,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1988723091722488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.97, z: 0}
+  m_LocalPosition: {x: 0, y: -7.675, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4982316779277826}
@@ -2464,7 +2464,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1233831687672878}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.252, y: 1.3129997, z: 0}
+  m_LocalPosition: {x: 0.252, y: 1.291, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4697638588230972}
@@ -2699,9 +2699,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69c6be8778e119d43b85275addac9f23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modeChangeSmoothing: 1
   camMoveSpeed: 120
-  camFollowObject_NormalMode: {fileID: 0}
-  camFollowObject_InteractionMode: {fileID: 0}
+  camFollowObject_NormalMode: {fileID: 1257506652243962}
+  camFollowObject_InteractionMode: {fileID: 1233831687672878}
   verticalClamp: 55
   inputSensitivity: 150
 --- !u!114 &114090396803527082
@@ -2773,7 +2774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fbd02991446ffe41bb946c8d7b79421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactDistance: 5
+  interactDistance: 3.5
   interactControls: {fileID: 0}
   reticlePanel: {fileID: 0}
 --- !u!124 &124240070691896050
