@@ -16,26 +16,26 @@ public class GateAnimController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //if (GetComponent<DoorPuzzle>().doorIsOpen && !isOpen)
-        //{
-        //    gateAnim.Play("OpenGate");
-        //    isOpen = true;
-        //}
-        //else if (!GetComponent<DoorPuzzle>().doorIsOpen && isOpen)
-        //{
-        //    gateAnim.Play("CloseGate");
-        //    isOpen = false;
-        //}
-
-        if (Input.GetKeyDown(KeyCode.O) && !isOpen)
+        if (GetComponent<DoorPuzzle>().doorIsOpen && !isOpen)
         {
             gateAnim.Play("OpenGate");
             isOpen = true;
         }
-        else if (Input.GetKeyDown(KeyCode.O) && isOpen)
+        else if (!GetComponent<DoorPuzzle>().doorIsOpen && isOpen)
         {
             gateAnim.Play("CloseGate");
             isOpen = false;
         }
+
+        //if (Input.GetKeyDown(KeyCode.O) && !isOpen)
+        //{
+        //    gateAnim.Play("OpenGate");
+        //    isOpen = true;
+        //}
+        //else if (Input.GetKeyDown(KeyCode.O) && isOpen)
+        //{
+        //    gateAnim.Play("CloseGate");
+        //    isOpen = false;
+        //}
     }
 }
