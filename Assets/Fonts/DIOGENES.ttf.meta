@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0c9b0b0e2bee35e418e0438ba578d71f
+timeCreated: 1522430415
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Diogenes
+  fontNames:
+  - Diogenes
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
