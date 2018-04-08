@@ -1542,14 +1542,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1246609427243262}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.47839928, y: 8.982349, z: -4.864233}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000032782552}
+  m_LocalPosition: {x: -3.05, y: 6.41, z: 14.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4469320801076604}
   m_Father: {fileID: 4247192200093130}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 179.99998, z: 0}
 --- !u!4 &4134607437376058
 Transform:
   m_ObjectHideFlags: 1
@@ -2072,8 +2072,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1110012376909936}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.47839928, y: 7.712349, z: -4.864233}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000032782552}
+  m_LocalPosition: {x: -3.05, y: 5.1399994, z: 14.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4789210192375324}
@@ -2083,7 +2083,7 @@ Transform:
   - {fileID: 4834417620765104}
   m_Father: {fileID: 4247192200093130}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 179.99998, z: 0}
 --- !u!4 &4625251356562784
 Transform:
   m_ObjectHideFlags: 1
@@ -2863,8 +2863,8 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 97852e963aea2584384c93edd3284ab0, type: 2}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2962,6 +2962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69c6be8778e119d43b85275addac9f23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modeChangeSmoothing: 1
   camMoveSpeed: 120
   camFollowObject_NormalMode: {fileID: 1206006547656030}
   camFollowObject_InteractionMode: {fileID: 1200553071701866}
