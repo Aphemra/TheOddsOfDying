@@ -42,7 +42,7 @@ MonoBehaviour:
   ambientOcclusion:
     m_Enabled: 1
     m_Settings:
-      intensity: 2
+      intensity: 4
       radius: 0.3
       sampleCount: 10
       downsampling: 1
@@ -50,7 +50,7 @@ MonoBehaviour:
       ambientOnly: 0
       highPrecision: 0
   screenSpaceReflection:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       reflection:
         blendType: 0
@@ -72,7 +72,7 @@ MonoBehaviour:
     m_Enabled: 0
     m_Settings:
       focusDistance: 5
-      aperture: 5.6
+      aperture: 2.3
       focalLength: 50
       useCameraFov: 0
       kernelSize: 1
@@ -101,10 +101,10 @@ MonoBehaviour:
     m_Settings:
       bloom:
         intensity: 1
-        threshold: 1.1
-        softKnee: 0.5
+        threshold: 1
+        softKnee: 0.648
         radius: 4
-        antiFlicker: 0
+        antiFlicker: 1
       lensDirt:
         texture: {fileID: 0}
         intensity: 3
@@ -121,11 +121,11 @@ MonoBehaviour:
         neutralWhiteClip: 10
       basic:
         postExposure: 0
-        temperature: 0
-        tint: 0
-        hueShift: 0
-        saturation: 0.27
-        contrast: 0.93
+        temperature: 9
+        tint: 15
+        hueShift: -7
+        saturation: 0.73
+        contrast: 1.1
       channelMixer:
         red: {x: 1, y: 0, z: 0}
         green: {x: 0, y: 1, z: 0}
@@ -281,15 +281,15 @@ MonoBehaviour:
       lut: {fileID: 0}
       contribution: 1
   chromaticAberration:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       spectralTexture: {fileID: 0}
       intensity: 0.1
   grain:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       colored: 1
-      intensity: 0.12
+      intensity: 0
       size: 1
       luminanceContribution: 0.8
   vignette:
