@@ -45,7 +45,6 @@ public class CheckInteractions : MonoBehaviour {
         // the opposite of it's previous state. (False if true, true if false)
         if (Input.GetButtonDown("Interact") && isInteractionAvailable)
         {
-            
             InteractionState state = hit.collider.GetComponent<InteractionState>();
             if (state != null && !state.getIsActive())
             {
