@@ -14,10 +14,10 @@ public class DialogueTrigger : MonoBehaviour {
 
     private void Start()
     {
-        StartDialogue();
+        //StartDialogue();
     }
 
-    /*private void Update()
+    private void Update()
     {
         isActive = interactState.getIsActive();
         if (isActive == true && inDialogue == false)
@@ -25,7 +25,7 @@ public class DialogueTrigger : MonoBehaviour {
                 inDialogue = true;
                 StartDialogue();
         }
-    }*/
+    }
 
     public void StartDialogue()
     {

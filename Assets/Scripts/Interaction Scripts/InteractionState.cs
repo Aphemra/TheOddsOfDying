@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class InteractionState : MonoBehaviour {
     
-    // Changes based on MovementControlScript
     [SerializeField] private bool isActive = false;
 
     public void setIsActive (bool state)

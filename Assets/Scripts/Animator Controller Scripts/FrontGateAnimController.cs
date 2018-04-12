@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GateAnimController : MonoBehaviour {
-
+public class FrontGateAnimController : MonoBehaviour {
+    
     Animator gateAnim;
     bool isOpen = false;
 
@@ -16,12 +16,12 @@ public class GateAnimController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (GetComponent<DoorPuzzle>().doorIsOpen && !isOpen)
+        if (GetComponent<FrontDoorPuzzle>().doorIsOpen && !isOpen)
         {
             gateAnim.Play("OpenGate");
             isOpen = true;
         }
-        else if (!GetComponent<DoorPuzzle>().doorIsOpen && isOpen)
+        else if (!GetComponent<FrontDoorPuzzle>().doorIsOpen && isOpen)
         {
             gateAnim.Play("CloseGate");
             isOpen = false;

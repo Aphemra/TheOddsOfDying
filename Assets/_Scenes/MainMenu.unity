@@ -1350,6 +1350,46 @@ Prefab:
       propertyPath: fadeCurve.m_RotationOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114242771263877312, guid: 96c5a11d388c1ee4282bdadfab2ea956,
+        type: 2}
+      propertyPath: fadeCurve.m_Curve.Array.data[2].time
+      value: 0.7351305
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242771263877312, guid: 96c5a11d388c1ee4282bdadfab2ea956,
+        type: 2}
+      propertyPath: fadeCurve.m_Curve.Array.data[2].value
+      value: 0.17271876
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242771263877312, guid: 96c5a11d388c1ee4282bdadfab2ea956,
+        type: 2}
+      propertyPath: fadeCurve.m_Curve.Array.data[2].inSlope
+      value: -0.19699335
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242771263877312, guid: 96c5a11d388c1ee4282bdadfab2ea956,
+        type: 2}
+      propertyPath: fadeCurve.m_Curve.Array.data[2].outSlope
+      value: -0.19699335
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242771263877312, guid: 96c5a11d388c1ee4282bdadfab2ea956,
+        type: 2}
+      propertyPath: fadeCurve.m_Curve.Array.data[3].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242771263877312, guid: 96c5a11d388c1ee4282bdadfab2ea956,
+        type: 2}
+      propertyPath: fadeCurve.m_Curve.Array.data[3].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242771263877312, guid: 96c5a11d388c1ee4282bdadfab2ea956,
+        type: 2}
+      propertyPath: fadeCurve.m_Curve.Array.data[3].inSlope
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242771263877312, guid: 96c5a11d388c1ee4282bdadfab2ea956,
+        type: 2}
+      propertyPath: fadeCurve.m_Curve.Array.data[3].outSlope
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96c5a11d388c1ee4282bdadfab2ea956, type: 2}
   m_IsPrefabParent: 0

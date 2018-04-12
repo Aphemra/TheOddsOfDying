@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DoorPuzzle : MonoBehaviour
+public class FrontDoorPuzzle : MonoBehaviour
 {
 
     public GameObject[] levers;

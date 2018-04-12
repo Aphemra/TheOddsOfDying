@@ -17,6 +17,7 @@ public class DialogueManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         lines = new Queue<string>();
+        animator.SetBool("IsOpen", false);
 	}
 
     private void Update()

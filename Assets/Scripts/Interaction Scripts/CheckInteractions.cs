@@ -30,17 +30,17 @@ public class CheckInteractions : MonoBehaviour {
             reticlePanel.SetActive(true);
             isInteractionAvailable = true;
             interactControls.enabled = true;
-            Debug.Log("INTERACTING");
+            //Debug.Log("INTERACTING");
         }
         else // if (!Physics.Raycast(interactionRay, out hit, interactDistance))
         {
             reticlePanel.SetActive(true);
             isInteractionAvailable = false;
             interactControls.enabled = false;
-            Debug.Log("NOT INTERACTING");
+            //Debug.Log("NOT INTERACTING");
         }
 
-        // Checks whether above boolean is true and the "E" key is pressed down.
+        // Checks whether above boolean is true and the Interact button (Left Click) is pressed down.
         // If both are true, it sets the state of the interactable object as
         // the opposite of it's previous state. (False if true, true if false)
         if (Input.GetButtonDown("Interact") && isInteractionAvailable)
