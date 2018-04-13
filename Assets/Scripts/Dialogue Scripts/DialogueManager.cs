@@ -22,10 +22,11 @@ public class DialogueManager : MonoBehaviour {
 
     private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Return))
+            DisplayNextLine();
     }
 
-    public void BeginDialogue (Dialogue dialogue, string trigger)
+    public void BeginDialogue (Dialogue dialogue)
     {
         animator.SetBool("isOpen", true);
 
@@ -42,26 +43,26 @@ public class DialogueManager : MonoBehaviour {
 
         //Time.timeScale = 0;
 
-        DisplayNextLine(trigger);
+        DisplayNextLine();
     }
 
-    public void DisplayNextLine(string trigger)
+    public void DisplayNextLine()
     {
         if(lines.Count == 0)
         {
-            EndDialogue(trigger);
+            EndDialogue();
             return;
         }
 
         string line = lines.Dequeue();
-        dialogueText.text = line; //Remove comment to make dialogue display immediately instead of scrolling
-        //StopAllCoroutines(); //Comment out this line to disable scrolling text
-        //StartCoroutine(WriteLine(line)); //Comment out this line to disable scrolling text
+        //dialogueText.text = line; //Remove comment to make dialogue display immediately instead of scrolling
+        StopAllCoroutines(); //Comment out this line to disable scrolling text
+        StartCoroutine(WriteLine(line)); //Comment out this line to disable scrolling text
         //Debug.Log(line); //Remove comment to log all dialogue lines in debug console
     }
 
     //Comment out WriteLine to disable scrolling text
-    /*IEnumerator WriteLine (string line)
+    IEnumerator WriteLine (string line)
     {
         dialogueText.text = "";
         foreach(char character in line.ToCharArray())
@@ -69,9 +70,9 @@ public class DialogueManager : MonoBehaviour {
             dialogueText.text += character;
             yield return null;
         }
-    }*/
+    }
 
-    public void EndDialogue(string trigger)
+    public void EndDialogue()
     {
         animator.SetBool("isOpen", false);
         Cursor.lockState = CursorLockMode.Locked;
