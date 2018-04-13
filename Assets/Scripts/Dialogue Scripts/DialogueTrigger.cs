@@ -29,7 +29,7 @@ public class DialogueTrigger : MonoBehaviour {
 
     public void StartDialogue()
     {
-        FindObjectOfType<DialogueManager>().BeginDialogue(dialogue, this.name);
+        FindObjectOfType<DialogueManager>().BeginDialogue(dialogue);
     }
 
 }
