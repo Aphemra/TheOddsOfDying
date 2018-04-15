@@ -310,8 +310,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1791210681702386}
-  m_LocalRotation: {x: -0.6345196, y: -0.3120656, z: -0.31206554, w: 0.6345196}
-  m_LocalPosition: {x: 45.58, y: 3.66, z: 31.72}
+  m_LocalRotation: {x: -0.4924082, y: 0.5074781, z: 0.50747836, w: 0.49240828}
+  m_LocalPosition: {x: 42.785828, y: -0.339, z: 35.910122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4369899111806844}
@@ -326,7 +326,7 @@ Transform:
   - {fileID: 4254384322603422}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -52.377003}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 91.727005}
 --- !u!4 &4764301005463104
 Transform:
   m_ObjectHideFlags: 1
@@ -367,7 +367,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0581863fec2abc64b8fe599c778394bc, type: 3}
+  - {fileID: 2100000, guid: caec5eaccd7ec494e92bf10ebceaccac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -401,7 +401,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0581863fec2abc64b8fe599c778394bc, type: 3}
+  - {fileID: 2100000, guid: caec5eaccd7ec494e92bf10ebceaccac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -435,7 +435,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0581863fec2abc64b8fe599c778394bc, type: 3}
+  - {fileID: 2100000, guid: caec5eaccd7ec494e92bf10ebceaccac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -469,7 +469,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0581863fec2abc64b8fe599c778394bc, type: 3}
+  - {fileID: 2100000, guid: caec5eaccd7ec494e92bf10ebceaccac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -503,7 +503,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0581863fec2abc64b8fe599c778394bc, type: 3}
+  - {fileID: 2100000, guid: caec5eaccd7ec494e92bf10ebceaccac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -537,7 +537,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0581863fec2abc64b8fe599c778394bc, type: 3}
+  - {fileID: 2100000, guid: caec5eaccd7ec494e92bf10ebceaccac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -571,7 +571,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0581863fec2abc64b8fe599c778394bc, type: 3}
+  - {fileID: 2100000, guid: caec5eaccd7ec494e92bf10ebceaccac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -605,7 +605,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0581863fec2abc64b8fe599c778394bc, type: 3}
+  - {fileID: 2100000, guid: caec5eaccd7ec494e92bf10ebceaccac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -639,7 +639,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0581863fec2abc64b8fe599c778394bc, type: 3}
+  - {fileID: 2100000, guid: caec5eaccd7ec494e92bf10ebceaccac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -673,7 +673,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0581863fec2abc64b8fe599c778394bc, type: 3}
+  - {fileID: 2100000, guid: caec5eaccd7ec494e92bf10ebceaccac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -806,7 +806,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1791210681702386}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 0581863fec2abc64b8fe599c778394bc, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
