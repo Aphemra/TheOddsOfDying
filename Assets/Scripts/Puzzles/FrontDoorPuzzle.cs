@@ -68,4 +68,14 @@ public class FrontDoorPuzzle : MonoBehaviour
         if (time <= 0f)
             notifyOpen = false;
     }
+
+    public void ResetLevers()
+    {
+        lever0.setIsActive(false);
+        lever1.setIsActive(false);
+        lever2.setIsActive(false);
+        lever3.setIsActive(false);
+        lever4.setIsActive(false);
+        lever5.setIsActive(false);
+    }
 }
