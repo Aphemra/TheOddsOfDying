@@ -16,5 +16,7 @@ public class ExitTrigger : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
         fader.FadeToScene(0);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }

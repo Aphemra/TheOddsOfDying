@@ -39,10 +39,7 @@ public class DialogueManager : MonoBehaviour {
             lines.Enqueue(line);
         }
 
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-
-        //Time.timeScale = 0;
+        Time.timeScale = 0;
 
         DisplayNextLine();
     }
@@ -76,9 +73,7 @@ public class DialogueManager : MonoBehaviour {
     public void EndDialogue()
     {
         animator.SetBool("isOpen", false);
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        //Time.timeScale = 1;
+        Time.timeScale = 1;
         //interactState.setIsActive(false);
         Debug.Log("End dialogue");
     }
