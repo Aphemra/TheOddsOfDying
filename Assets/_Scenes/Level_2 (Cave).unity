@@ -168,6 +168,11 @@ Prefab:
       propertyPath: m_Name
       value: Walkway Cube (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
   m_IsPrefabParent: 0
@@ -611,6 +616,108 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f4ade181be3351f459519c54bcdf3482, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &36671521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1600360303342726, guid: 0d3c3086760a48441bf3711194abb1ec,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 36671522}
+  - component: {fileID: 36671526}
+  - component: {fileID: 36671525}
+  - component: {fileID: 36671524}
+  - component: {fileID: 36671523}
+  m_Layer: 0
+  m_Name: Pit_Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &36671522
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4561664107327506, guid: 0d3c3086760a48441bf3711194abb1ec,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36671521}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000009834765}
+  m_LocalPosition: {x: 26.468, y: -0.538, z: 138.78}
+  m_LocalScale: {x: 5.36052, y: 0.3370486, z: 52.318394}
+  m_Children: []
+  m_Father: {fileID: 811057850}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &36671523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36671521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d27d8b57a8259145ba3142305130568, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawn: {fileID: 1644538738}
+--- !u!23 &36671524
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36671521}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 93c8f7811035feb45a3f5b0c3e363fc2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &36671525
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65359881261028114, guid: 0d3c3086760a48441bf3711194abb1ec,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36671521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &36671526
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33578467120124630, guid: 0d3c3086760a48441bf3711194abb1ec,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36671521}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &37890279
 Prefab:
   m_ObjectHideFlags: 0
@@ -1006,6 +1113,11 @@ Prefab:
     - target: {fileID: 1600360303342726, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
       propertyPath: m_Name
       value: Walkway Cube (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
@@ -1753,6 +1865,11 @@ Transform:
 --- !u!1 &115077776 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1273154258943924, guid: 7f856152fa77903478fa361cea759739,
+    type: 2}
+  m_PrefabInternal: {fileID: 1383113303}
+--- !u!4 &115077777 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4697638588230972, guid: 7f856152fa77903478fa361cea759739,
     type: 2}
   m_PrefabInternal: {fileID: 1383113303}
 --- !u!1001 &115966579
@@ -5326,6 +5443,11 @@ Prefab:
       propertyPath: m_Name
       value: Walkway Cube (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
   m_IsPrefabParent: 0
@@ -6296,6 +6418,11 @@ Prefab:
       propertyPath: m_Name
       value: Walkway Cube (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
   m_IsPrefabParent: 0
@@ -6567,7 +6694,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4055449640664678, guid: f0483f769b612624d866eb90a898da86, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 114749363063836798, guid: f0483f769b612624d866eb90a898da86,
         type: 2}
@@ -6969,6 +7096,95 @@ Transform:
   m_PrefabParentObject: {fileID: 4185898641992710, guid: 237714f76dd5f2a46956156fb4c7159b,
     type: 2}
   m_PrefabInternal: {fileID: 337082828}
+--- !u!1 &339909243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1865724383123366, guid: e475d59d52cca674fa97de640e1835c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 339909244}
+  - component: {fileID: 339909247}
+  - component: {fileID: 339909246}
+  - component: {fileID: 339909245}
+  m_Layer: 0
+  m_Name: Exit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &339909244
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4925506358578322, guid: e475d59d52cca674fa97de640e1835c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 339909243}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000009834765}
+  m_LocalPosition: {x: -3.52, y: 6.85, z: -148.22}
+  m_LocalScale: {x: 6.00233, y: 7.3427696, z: 0.99301}
+  m_Children: []
+  m_Father: {fileID: 1046954119}
+  m_RootOrder: 102
+  m_LocalEulerAnglesHint: {x: 0, y: -180.00002, z: 0}
+--- !u!65 &339909245
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65448959892934996, guid: e475d59d52cca674fa97de640e1835c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 339909243}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &339909246
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23846643902867470, guid: e475d59d52cca674fa97de640e1835c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 339909243}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: fce59e96669cfe94287fba5bf4fd43f7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &339909247
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33834093089620144, guid: e475d59d52cca674fa97de640e1835c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 339909243}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &340723736
 Prefab:
   m_ObjectHideFlags: 0
@@ -7976,7 +8192,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4662935551527454, guid: 96c5a11d388c1ee4282bdadfab2ea956, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96c5a11d388c1ee4282bdadfab2ea956, type: 2}
@@ -9720,6 +9936,11 @@ Prefab:
       propertyPath: m_Name
       value: Walkway Cube (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
   m_IsPrefabParent: 0
@@ -10418,7 +10639,7 @@ Transform:
   - {fileID: 1373393937}
   - {fileID: 1502824679}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &490945001
 Prefab:
@@ -11057,6 +11278,11 @@ Prefab:
     - target: {fileID: 1600360303342726, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
       propertyPath: m_Name
       value: Walkway Cube (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
@@ -14354,6 +14580,11 @@ Prefab:
       propertyPath: m_Name
       value: Walkway Cube (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
   m_IsPrefabParent: 0
@@ -14411,6 +14642,11 @@ Prefab:
     - target: {fileID: 1600360303342726, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
       propertyPath: m_Name
       value: Walkway Cube (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
@@ -15914,9 +16150,10 @@ Transform:
   m_LocalPosition: {x: -2.6899996, y: 3.8799999, z: 18.79}
   m_LocalScale: {x: 6.00233, y: 7.3427696, z: 0.99301}
   m_Children:
-  - {fileID: 2027210413}
+  - {fileID: 36671522}
+  - {fileID: 883412472}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &817619866
 Prefab:
@@ -16909,6 +17146,107 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c683189392b7d4d4fbb7ecfd81b4c95b, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &883412471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1865724383123366, guid: e475d59d52cca674fa97de640e1835c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 883412472}
+  - component: {fileID: 883412476}
+  - component: {fileID: 883412475}
+  - component: {fileID: 883412474}
+  - component: {fileID: 883412473}
+  m_Layer: 0
+  m_Name: Exit_Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &883412472
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4925506358578322, guid: e475d59d52cca674fa97de640e1835c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883412471}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.14, y: 0, z: 167.36}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 811057850}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -180.00002, z: 0}
+--- !u!114 &883412473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883412471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e30ffd581a6b14aaa290aabd518519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &883412474
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65448959892934996, guid: e475d59d52cca674fa97de640e1835c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883412471}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &883412475
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23846643902867470, guid: e475d59d52cca674fa97de640e1835c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883412471}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: fce59e96669cfe94287fba5bf4fd43f7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &883412476
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33834093089620144, guid: e475d59d52cca674fa97de640e1835c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883412471}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &883516383
 Prefab:
   m_ObjectHideFlags: 0
@@ -17341,7 +17679,7 @@ Transform:
   - {fileID: 366120634}
   - {fileID: 1233745078}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &902510622
 Prefab:
@@ -18099,7 +18437,7 @@ Prefab:
     - target: {fileID: 224113453615051986, guid: 101a1c6e999b3e741a96752b31f9c79c,
         type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 224113453615051986, guid: 101a1c6e999b3e741a96752b31f9c79c,
         type: 2}
@@ -18154,6 +18492,26 @@ Prefab:
     - target: {fileID: 1174725981591670, guid: 101a1c6e999b3e741a96752b31f9c79c, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114159793138379638, guid: 101a1c6e999b3e741a96752b31f9c79c,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114159793138379638, guid: 101a1c6e999b3e741a96752b31f9c79c,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114159793138379638, guid: 101a1c6e999b3e741a96752b31f9c79c,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114159793138379638, guid: 101a1c6e999b3e741a96752b31f9c79c,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 101a1c6e999b3e741a96752b31f9c79c, type: 2}
@@ -18396,6 +18754,11 @@ Prefab:
     - target: {fileID: 1600360303342726, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
       propertyPath: m_Name
       value: Walkway Cube (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
@@ -18647,6 +19010,11 @@ Prefab:
     - target: {fileID: 1600360303342726, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
       propertyPath: m_Name
       value: Walkway Cube (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
@@ -20394,6 +20762,11 @@ Prefab:
       propertyPath: m_Name
       value: Walkway Cube (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
   m_IsPrefabParent: 0
@@ -20637,7 +21010,7 @@ Transform:
   - {fileID: 223279013}
   - {fileID: 1924997656}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1039728599 stripped
 Transform:
@@ -20771,6 +21144,7 @@ Transform:
   - {fileID: 1791414394}
   - {fileID: 1836781387}
   - {fileID: 1348318111}
+  - {fileID: 339909244}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21258,6 +21632,11 @@ Prefab:
     - target: {fileID: 1600360303342726, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
       propertyPath: m_Name
       value: Walkway Cube (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
@@ -22881,7 +23260,7 @@ Transform:
   m_Children:
   - {fileID: 1039728599}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1140605275 stripped
 Transform:
@@ -23054,6 +23433,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4561664107327506, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -24217,7 +24601,7 @@ Transform:
   - {fileID: 70314041}
   - {fileID: 910887902}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1221325759 stripped
 Transform:
@@ -24278,6 +24662,11 @@ Prefab:
     - target: {fileID: 1600360303342726, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
       propertyPath: m_Name
       value: Walkway Cube (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
@@ -24949,7 +25338,7 @@ Transform:
   - {fileID: 1367562187}
   - {fileID: 784256271}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1258869640
 Prefab:
@@ -27405,6 +27794,11 @@ Prefab:
       propertyPath: m_Name
       value: Walkway Cube (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
   m_IsPrefabParent: 0
@@ -27535,7 +27929,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4545560690563344, guid: 7f856152fa77903478fa361cea759739, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.5
+      value: -140.5
       objectReference: {fileID: 0}
     - target: {fileID: 4545560690563344, guid: 7f856152fa77903478fa361cea759739, type: 2}
       propertyPath: m_LocalPosition.y
@@ -27543,7 +27937,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4545560690563344, guid: 7f856152fa77903478fa361cea759739, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 8.95
+      value: -122.1
       objectReference: {fileID: 0}
     - target: {fileID: 4545560690563344, guid: 7f856152fa77903478fa361cea759739, type: 2}
       propertyPath: m_LocalRotation.x
@@ -27563,7 +27957,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4545560690563344, guid: 7f856152fa77903478fa361cea759739, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 114853317529421684, guid: 7f856152fa77903478fa361cea759739,
         type: 2}
@@ -27736,7 +28130,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1413856862 stripped
 Transform:
@@ -28448,6 +28842,11 @@ Prefab:
       propertyPath: m_Name
       value: Walkway Cube (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
   m_IsPrefabParent: 0
@@ -28765,6 +29164,11 @@ Prefab:
     - target: {fileID: 1600360303342726, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
       propertyPath: m_Name
       value: Walkway Cube (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
@@ -31384,7 +31788,7 @@ Transform:
   - {fileID: 1238149750}
   - {fileID: 490945002}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!4 &1609415720 stripped
 Transform:
@@ -31724,6 +32128,36 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a45e1c6f0a12fc74fbcea8df586f009a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1644538737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1600360303342726, guid: 0d3c3086760a48441bf3711194abb1ec,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1644538738}
+  m_Layer: 0
+  m_Name: PitRespawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1644538738
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4561664107327506, guid: 0d3c3086760a48441bf3711194abb1ec,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1644538737}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -142.61, y: 1.462, z: -119.019615}
+  m_LocalScale: {x: 0.8870192, y: 2.4748702, z: 1.7132419}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1651490675 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4527463661341036, guid: 2c3fd779d7754fd4280bba5f74684349,
@@ -32344,6 +32778,11 @@ Prefab:
     - target: {fileID: 1600360303342726, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
       propertyPath: m_Name
       value: Walkway Cube (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
@@ -33371,6 +33810,15 @@ Prefab:
       propertyPath: m_Name
       value: Walkway Cube (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600360303342726, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
   m_IsPrefabParent: 0
@@ -33935,7 +34383,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1763251571
 Light:
   m_ObjectHideFlags: 0
@@ -33945,8 +34393,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 8
+  m_Color: {r: 0.64705884, g: 0.29458892, b: 0.023788912, a: 1}
+  m_Intensity: 1.5
   m_Range: 1000
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -33979,11 +34427,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1763251570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -158.19, y: 6.15, z: -132.6}
+  m_LocalPosition: {x: -158.19, y: 11.21, z: -119.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1765710538
 Prefab:
@@ -34959,6 +35407,71 @@ Transform:
   m_PrefabParentObject: {fileID: 4526435184459796, guid: a45e1c6f0a12fc74fbcea8df586f009a,
     type: 2}
   m_PrefabInternal: {fileID: 1842792383}
+--- !u!1 &1826834370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1826834371}
+  - component: {fileID: 1826834372}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1826834371
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1826834370}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0076007843, y: 0.9186506, z: 0.226}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 115077777}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1826834372
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1826834370}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 0.57823646, g: 0.60294116, b: 0.15516868, a: 1}
+  m_Intensity: 30
+  m_Range: 10
+  m_SpotAngle: 80.5
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1001 &1827990308
 Prefab:
   m_ObjectHideFlags: 0
@@ -38261,95 +38774,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4526435184459796, guid: a45e1c6f0a12fc74fbcea8df586f009a,
     type: 2}
   m_PrefabInternal: {fileID: 2022083252}
---- !u!1 &2027210412
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1865724383123366, guid: e475d59d52cca674fa97de640e1835c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2027210413}
-  - component: {fileID: 2027210416}
-  - component: {fileID: 2027210415}
-  - component: {fileID: 2027210414}
-  m_Layer: 0
-  m_Name: Entrance_Trigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2027210413
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4925506358578322, guid: e475d59d52cca674fa97de640e1835c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2027210412}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.56}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 811057850}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -180.00002, z: 0}
---- !u!65 &2027210414
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 65448959892934996, guid: e475d59d52cca674fa97de640e1835c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2027210412}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &2027210415
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 23846643902867470, guid: e475d59d52cca674fa97de640e1835c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2027210412}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: fce59e96669cfe94287fba5bf4fd43f7, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &2027210416
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33834093089620144, guid: e475d59d52cca674fa97de640e1835c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2027210412}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &2028344568 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4185898641992710, guid: 237714f76dd5f2a46956156fb4c7159b,
@@ -40281,6 +40705,11 @@ Prefab:
     - target: {fileID: 1600360303342726, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}
       propertyPath: m_Name
       value: Walkway Cube (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23339013083830272, guid: 0d3c3086760a48441bf3711194abb1ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d3c3086760a48441bf3711194abb1ec, type: 2}

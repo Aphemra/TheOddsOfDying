@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -57,7 +56,7 @@ public class FrontDoorPuzzle : MonoBehaviour
     // Timer for how long notification should stay on screen
     IEnumerator NotifyOpenGate()
     {
-        float time = 15f;
+        float time = 25f;
 
         while (time > 0f)
         {
