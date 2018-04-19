@@ -53,9 +53,9 @@ public class DialogueManager : MonoBehaviour {
         }
 
         string line = lines.Dequeue();
-        //dialogueText.text = line; //Remove comment to make dialogue display immediately instead of scrolling
-        StopAllCoroutines(); //Comment out this line to disable scrolling text
-        StartCoroutine(WriteLine(line)); //Comment out this line to disable scrolling text
+        dialogueText.text = line; //Remove comment to make dialogue display immediately instead of scrolling
+        //StopAllCoroutines(); //Comment out this line to disable scrolling text
+        //StartCoroutine(WriteLine(line)); //Comment out this line to disable scrolling text
         //Debug.Log(line); //Remove comment to log all dialogue lines in debug console
     }
 

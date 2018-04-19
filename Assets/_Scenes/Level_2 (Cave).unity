@@ -1381,6 +1381,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4185898641992710, guid: 237714f76dd5f2a46956156fb4c7159b,
     type: 2}
   m_PrefabInternal: {fileID: 396705778}
+--- !u!4 &66452910 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4369040510118356, guid: a70e7c621200d6a4896db84799a46eac,
+    type: 2}
+  m_PrefabInternal: {fileID: 288688240}
 --- !u!4 &70314041 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4526435184459796, guid: a45e1c6f0a12fc74fbcea8df586f009a,
@@ -5989,6 +5994,112 @@ Transform:
   m_PrefabParentObject: {fileID: 4526435184459796, guid: a45e1c6f0a12fc74fbcea8df586f009a,
     type: 2}
   m_PrefabInternal: {fileID: 288149892}
+--- !u!1001 &288688240
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1140197959}
+    m_Modifications:
+    - target: {fileID: 114646058400792808, guid: a70e7c621200d6a4896db84799a46eac,
+        type: 2}
+      propertyPath: dialogue.lines.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369040510118356, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -130.945
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369040510118356, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -44.782
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369040510118356, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -88.898
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369040510118356, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369040510118356, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369040510118356, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -1.7319123e-16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369040510118356, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369040510118356, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114646058400792808, guid: a70e7c621200d6a4896db84799a46eac,
+        type: 2}
+      propertyPath: dialogue.lines.Array.data[6]
+      value: "How do you know her?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114646058400792808, guid: a70e7c621200d6a4896db84799a46eac,
+        type: 2}
+      propertyPath: dialogue.lines.Array.data[5]
+      value: "But who is this woman?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114646058400792808, guid: a70e7c621200d6a4896db84799a46eac,
+        type: 2}
+      propertyPath: dialogue.lines.Array.data[4]
+      value: "Who is Daemian?  That must be your name.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114646058400792808, guid: a70e7c621200d6a4896db84799a46eac,
+        type: 2}
+      propertyPath: dialogue.lines.Array.data[3]
+      value: "(Woman) \u201DI love you, Daemian.\u201D\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114646058400792808, guid: a70e7c621200d6a4896db84799a46eac,
+        type: 2}
+      propertyPath: dialogue.lines.Array.data[2]
+      value: She kisses you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114646058400792808, guid: a70e7c621200d6a4896db84799a46eac,
+        type: 2}
+      propertyPath: dialogue.lines.Array.data[1]
+      value: "A woman sits next to you.  You do not recognize her.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114646058400792808, guid: a70e7c621200d6a4896db84799a46eac,
+        type: 2}
+      propertyPath: dialogue.lines.Array.data[0]
+      value: "You are sitting on a couch in a home.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 95572474512098880, guid: a70e7c621200d6a4896db84799a46eac,
+        type: 2}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95572474512098880, guid: a70e7c621200d6a4896db84799a46eac,
+        type: 2}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95572474512098880, guid: a70e7c621200d6a4896db84799a46eac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243434746955854, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
+      propertyPath: m_Name
+      value: Memory 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114646058400792808, guid: a70e7c621200d6a4896db84799a46eac,
+        type: 2}
+      propertyPath: dialogue.name
+      value: Memory 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &288736582 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4561664107327506, guid: 0d3c3086760a48441bf3711194abb1ec,
@@ -21164,11 +21275,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1039728599 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4394492239738918, guid: a70e7c621200d6a4896db84799a46eac,
-    type: 2}
-  m_PrefabInternal: {fileID: 1328530166}
 --- !u!1 &1046954118
 GameObject:
   m_ObjectHideFlags: 0
@@ -23410,7 +23516,7 @@ Transform:
   m_LocalPosition: {x: -47.45703, y: 47.023438, z: -14.375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1039728599}
+  - {fileID: 66452910}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27125,110 +27231,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4527463661341036, guid: 2c3fd779d7754fd4280bba5f74684349,
     type: 2}
   m_PrefabInternal: {fileID: 118036263}
---- !u!1001 &1328530166
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1140197959}
-    m_Modifications:
-    - target: {fileID: 114739891140879490, guid: a70e7c621200d6a4896db84799a46eac,
-        type: 2}
-      propertyPath: dialogue.lines.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4394492239738918, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -130.94698
-      objectReference: {fileID: 0}
-    - target: {fileID: 4394492239738918, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -44.82644
-      objectReference: {fileID: 0}
-    - target: {fileID: 4394492239738918, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -88.844
-      objectReference: {fileID: 0}
-    - target: {fileID: 4394492239738918, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0.04346576
-      objectReference: {fileID: 0}
-    - target: {fileID: 4394492239738918, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4394492239738918, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4394492239738918, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.99905497
-      objectReference: {fileID: 0}
-    - target: {fileID: 4394492239738918, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4394492239738918, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.10475911
-      objectReference: {fileID: 0}
-    - target: {fileID: 4394492239738918, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.15445848
-      objectReference: {fileID: 0}
-    - target: {fileID: 114739891140879490, guid: a70e7c621200d6a4896db84799a46eac,
-        type: 2}
-      propertyPath: dialogue.name
-      value: Memory 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1609928903813782, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
-      propertyPath: m_Name
-      value: Memory 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114739891140879490, guid: a70e7c621200d6a4896db84799a46eac,
-        type: 2}
-      propertyPath: dialogue.lines.Array.data[0]
-      value: "You are sitting on a couch in a home.\r"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114739891140879490, guid: a70e7c621200d6a4896db84799a46eac,
-        type: 2}
-      propertyPath: dialogue.lines.Array.data[1]
-      value: "A woman sits next to you.  You do not recognize her.\r"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114739891140879490, guid: a70e7c621200d6a4896db84799a46eac,
-        type: 2}
-      propertyPath: dialogue.lines.Array.data[2]
-      value: She kisses you.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114739891140879490, guid: a70e7c621200d6a4896db84799a46eac,
-        type: 2}
-      propertyPath: dialogue.lines.Array.data[3]
-      value: "(Woman) \u201DI love you, Daemian.\u201D\r"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114739891140879490, guid: a70e7c621200d6a4896db84799a46eac,
-        type: 2}
-      propertyPath: dialogue.lines.Array.data[4]
-      value: "Who is Daemian?  That must be your name.\r"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114739891140879490, guid: a70e7c621200d6a4896db84799a46eac,
-        type: 2}
-      propertyPath: dialogue.lines.Array.data[5]
-      value: "But who is this woman?\r"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114739891140879490, guid: a70e7c621200d6a4896db84799a46eac,
-        type: 2}
-      propertyPath: dialogue.lines.Array.data[6]
-      value: "How do you know her?\r"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114739891140879490, guid: a70e7c621200d6a4896db84799a46eac,
-        type: 2}
-      propertyPath: inDialogue
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: a70e7c621200d6a4896db84799a46eac, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &1333636500 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4526435184459796, guid: a45e1c6f0a12fc74fbcea8df586f009a,
