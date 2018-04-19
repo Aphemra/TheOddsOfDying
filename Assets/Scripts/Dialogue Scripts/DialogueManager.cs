@@ -14,8 +14,9 @@ public class DialogueManager : MonoBehaviour {
     public DialogueTrigger midDialogue;
     private Queue<string> lines;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start ()
+    {
         lines = new Queue<string>();
         animator.SetBool("IsOpen", false);
 	}

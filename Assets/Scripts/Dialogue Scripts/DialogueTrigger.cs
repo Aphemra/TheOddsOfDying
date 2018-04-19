@@ -22,8 +22,12 @@ public class DialogueTrigger : MonoBehaviour {
         isActive = interactState.getIsActive();
         if (isActive == true && inDialogue == false)
         {
-                inDialogue = true;
-                StartDialogue();
+            inDialogue = true;
+            StartDialogue();
+        }
+        if (inDialogue == true)    //sets the object this script is attached to, to destroy itself
+        {
+            Destroy(gameObject);
         }
     }
 
