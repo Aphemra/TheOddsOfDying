@@ -22,9 +22,11 @@ GameObject:
   - component: {fileID: 33770618948342952}
   - component: {fileID: 136030086365042812}
   - component: {fileID: 23316064617491128}
+  - component: {fileID: 114739891140879490}
+  - component: {fileID: 114650798287919216}
   m_Layer: 0
   m_Name: Memory
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,6 +85,35 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1609928903813782}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114650798287919216
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1609928903813782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74947cd81f553ef4aac28a95fcb44bca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+--- !u!114 &114739891140879490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1609928903813782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b60cd8c67a9c81f4ba0d60be26c6393f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactState: {fileID: 114650798287919216}
+  isActive: 0
+  dialogue:
+    name: 
+    lines: []
+  inDialogue: 0
 --- !u!136 &136030086365042812
 CapsuleCollider:
   m_ObjectHideFlags: 1
