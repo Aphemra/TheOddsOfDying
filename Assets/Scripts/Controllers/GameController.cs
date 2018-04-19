@@ -9,6 +9,8 @@ public class GameController : MonoBehaviour
     Scene scene;
     public GameObject player;
     public GameObject reticulePanel;
+    public GameObject pausemenu;//variable for pausemenu
+    //public GameObject playerCanvas;//variable for player canvas
     public bool cursorVisible = false;
     
     Ray ray;
@@ -32,6 +34,16 @@ public class GameController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
             Application.Quit();
+
+        //if block handling opening pause menu
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Cursor.lockState = CursorLockMode.None;//unlock cursor
+            Cursor.visible = !cursorVisible;//make cursor visible
+            Time.timeScale = 0f;
+            pausemenu.SetActive(true);//set pausemenu canvas to active
+            //playerCanvas.SetActive(false);//deactivate playerCanvas
+        }
 
         // Disable reticule if over player Object
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
