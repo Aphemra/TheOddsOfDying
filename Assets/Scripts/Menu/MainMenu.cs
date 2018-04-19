@@ -27,9 +27,6 @@ public class MainMenu : MonoBehaviour {
             fader.CrossFadeObjects(mainMenuCanvas, helpMenuCanvas);
         else if (helpMenuCanvas.GetComponent<GraphicRaycaster>().enabled)
             fader.CrossFadeObjects(helpMenuCanvas, mainMenuCanvas);
-
-        //mainMenuCanvas.SetActive(!mainMenuCanvas.activeSelf);
-        //helpMenuCanvas.SetActive(!helpMenuCanvas.activeSelf);
     }
 
     // Quits game

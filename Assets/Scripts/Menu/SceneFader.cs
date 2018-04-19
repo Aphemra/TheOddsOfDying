@@ -70,6 +70,5 @@ public class SceneFader : MonoBehaviour {
             objectToFadeIn.GetComponent<CanvasGroup>().alpha = timeIn;
             yield return 0;
         }
-
     }
 }
