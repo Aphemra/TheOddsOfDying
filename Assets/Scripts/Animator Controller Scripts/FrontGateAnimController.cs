@@ -11,7 +11,6 @@ public class FrontGateAnimController : MonoBehaviour {
 	void Start () {
 
         gateAnim = GetComponent<Animator>();
-
 	}
 	
 	// Update is called once per frame
@@ -19,23 +18,15 @@ public class FrontGateAnimController : MonoBehaviour {
         if (GetComponent<FrontDoorPuzzle>().doorIsOpen && !isOpen)
         {
             gateAnim.Play("OpenGate");
+            GetComponent<AudioSource>().Play();
             isOpen = true;
         }
         else if (!GetComponent<FrontDoorPuzzle>().doorIsOpen && isOpen)
         {
             gateAnim.Play("CloseGate");
+            GetComponent<AudioSource>().pitch -= 0.3f;
+            GetComponent<AudioSource>().Play();
             isOpen = false;
         }
-
-        //if (Input.GetKeyDown(KeyCode.O) && !isOpen)
-        //{
-        //    gateAnim.Play("OpenGate");
-        //    isOpen = true;
-        //}
-        //else if (Input.GetKeyDown(KeyCode.O) && isOpen)
-        //{
-        //    gateAnim.Play("CloseGate");
-        //    isOpen = false;
-        //}
     }
 }

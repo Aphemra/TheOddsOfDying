@@ -43,6 +43,11 @@ public class PauseMenu : MonoBehaviour {
         Application.Quit(); // Closes application
     }
 
+    public void ToMainMenu()
+    {
+        fader.FadeToScene(0);
+    }
+
     IEnumerator SetTimeScale(float scale, float delayTime)
     {
         yield return new WaitForSeconds(delayTime);

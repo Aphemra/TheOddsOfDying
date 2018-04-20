@@ -54,8 +54,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 m_Move = v * Vector3.forward + h * Vector3.right;
             }
 #if !MOBILE_INPUT
-			// walk speed multiplier
-	        if (Input.GetKey(KeyCode.LeftShift)) m_Move *= 2.5f;
+            // walk speed multiplier
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                m_Move *= 2.5f;
+            }
 #endif
 
             // pass all parameters to the character control script

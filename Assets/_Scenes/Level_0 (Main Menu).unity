@@ -310,7 +310,7 @@ RectTransform:
   - {fileID: 1528003793}
   - {fileID: 15376554}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -438,6 +438,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 221388050}
         m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 876639285}
+        m_MethodName: PlayClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1042,6 +1053,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 876639285}
+        m_MethodName: PlayClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &591423244
@@ -1145,6 +1167,54 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 740730633}
+--- !u!1001 &876639284
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4293648688679040, guid: 4e9f2db4c112e8e4ea7686433fd9077f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -10.757742
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293648688679040, guid: 4e9f2db4c112e8e4ea7686433fd9077f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -17.47887
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293648688679040, guid: 4e9f2db4c112e8e4ea7686433fd9077f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 41.50573
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293648688679040, guid: 4e9f2db4c112e8e4ea7686433fd9077f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293648688679040, guid: 4e9f2db4c112e8e4ea7686433fd9077f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293648688679040, guid: 4e9f2db4c112e8e4ea7686433fd9077f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293648688679040, guid: 4e9f2db4c112e8e4ea7686433fd9077f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293648688679040, guid: 4e9f2db4c112e8e4ea7686433fd9077f, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4e9f2db4c112e8e4ea7686433fd9077f, type: 2}
+  m_IsPrefabParent: 0
+--- !u!114 &876639285 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114796105891895422, guid: 4e9f2db4c112e8e4ea7686433fd9077f,
+    type: 2}
+  m_PrefabInternal: {fileID: 876639284}
+  m_Script: {fileID: 11500000, guid: de68974fa5ee6414d993a448f87b85fd, type: 3}
 --- !u!1 &1359217169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,7 +1393,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4662935551527454, guid: 96c5a11d388c1ee4282bdadfab2ea956, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114242771263877312, guid: 96c5a11d388c1ee4282bdadfab2ea956,
         type: 2}
@@ -1471,6 +1541,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 221388050}
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 876639285}
+        m_MethodName: PlayClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1804,6 +1885,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 221388050}
         m_MethodName: SwitchMenu_MainHelp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 876639285}
+        m_MethodName: PlayClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

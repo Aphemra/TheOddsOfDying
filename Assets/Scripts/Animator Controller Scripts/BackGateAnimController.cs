@@ -19,23 +19,15 @@ public class BackGateAnimController : MonoBehaviour {
         if (GetComponent<BackDoorPuzzle>().doorIsOpen && !isOpen)
         {
             gateAnim.Play("OpenGate");
+            GetComponent<AudioSource>().Play();
             isOpen = true;
         }
         else if (!GetComponent<BackDoorPuzzle>().doorIsOpen && isOpen)
         {
             gateAnim.Play("CloseGate");
+            GetComponent<AudioSource>().pitch -= 0.3f;
+            GetComponent<AudioSource>().Play();
             isOpen = false;
         }
-
-        //if (Input.GetKeyDown(KeyCode.O) && !isOpen)
-        //{
-        //    gateAnim.Play("OpenGate");
-        //    isOpen = true;
-        //}
-        //else if (Input.GetKeyDown(KeyCode.O) && isOpen)
-        //{
-        //    gateAnim.Play("CloseGate");
-        //    isOpen = false;
-        //}
     }
 }

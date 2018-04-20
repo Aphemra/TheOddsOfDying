@@ -63,6 +63,16 @@ public class BackDoorPuzzle : MonoBehaviour
 
     public void ResetLevers()
     {
+        foreach (GameObject lever in levers)
+        {
+            lever.GetComponent<AudioSource>().enabled = false;
+        }
+
         lever0.setIsActive(false);
+
+        foreach (GameObject lever in levers)
+        {
+            lever.GetComponent<AudioSource>().enabled = true;
+        }
     }
 }

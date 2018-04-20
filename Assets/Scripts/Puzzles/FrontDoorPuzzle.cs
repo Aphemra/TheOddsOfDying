@@ -70,11 +70,21 @@ public class FrontDoorPuzzle : MonoBehaviour
 
     public void ResetLevers()
     {
+        foreach (GameObject lever in levers)
+        {
+            lever.GetComponent<AudioSource>().enabled = false;
+        }
+
         lever0.setIsActive(false);
         lever1.setIsActive(false);
         lever2.setIsActive(false);
         lever3.setIsActive(false);
         lever4.setIsActive(false);
         lever5.setIsActive(false);
+        
+        foreach (GameObject lever in levers)
+        {
+            lever.GetComponent<AudioSource>().enabled = true;
+        }
     }
 }

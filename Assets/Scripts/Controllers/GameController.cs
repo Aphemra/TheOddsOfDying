@@ -15,6 +15,8 @@ public class GameController : MonoBehaviour
     Ray ray;
     RaycastHit hit;
     SceneFader fader;
+    AudioManager am;
+    float pitchModifier = 0.5f;
 
     // Use this for initialization
     void Start()
@@ -26,36 +28,21 @@ public class GameController : MonoBehaviour
         Cursor.visible = cursorVisible;
 
         scene = SceneManager.GetActiveScene();
+
+        am = FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (fader.isRunning == false && pauseMenu.activeSelf == false)
-        //{
-        //    Time.timeScale = 1f;
-        //}
-        //else
-        //{
-        //    Time.timeScale = 0f;
-        //}
-
         //if block handling opening pause menu
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Cursor.lockState = CursorLockMode.None;//unlock cursor
-            Cursor.visible = !cursorVisible;//make cursor visible
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = !cursorVisible;
             Time.timeScale = 0f;
-            pauseMenu.SetActive(true);//set pausemenu canvas to active
+            pauseMenu.SetActive(true);
         }
-
-        /*if (Input.GetKeyDown(KeyCode.Escape) && pauseMenu.activeSelf == true)
-        {
-            Cursor.lockState = CursorLockMode.Locked;//unlock cursor
-            Cursor.visible = !cursorVisible;//make cursor visible
-            Time.timeScale = 1f;
-            pauseMenu.SetActive(false);//set pausemenu canvas to active
-        }*/
 
         // Disable reticule if over player Object
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -66,6 +53,67 @@ public class GameController : MonoBehaviour
                 reticulePanel.SetActive(false);
             else if (hit.collider.name != player.name)
                 reticulePanel.SetActive(true);
+        }
+
+        #region MovementChecking
+
+        // Check to see if character is walking, playing audio appropriately
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            WalkingAudio(true);
+        }
+        else if (Input.GetKeyUp(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+        {
+            WalkingAudio(false);
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            WalkingAudio(true);
+        }
+        else if (Input.GetKeyUp(KeyCode.A) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+        {
+            WalkingAudio(false);
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            WalkingAudio(true);
+        }
+        else if (Input.GetKeyUp(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.D))
+        {
+            WalkingAudio(false);
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            WalkingAudio(true);
+        }
+        else if (Input.GetKeyUp(KeyCode.D) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W))
+        {
+            WalkingAudio(false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            am.AlterAudio("Footsteps Walking", pitchModifier, true);
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            am.AlterAudio("Footsteps Walking", pitchModifier, false);
+        }
+
+        #endregion
+
+    }
+
+    void WalkingAudio(bool isWalking)
+    {
+        if (isWalking)
+        {
+            am.AlterAudio("Footsteps Walking", "Play");
+        }
+
+        if (!isWalking)
+        {
+            am.AlterAudio("Footsteps Walking", "Stop");
         }
     }
 }
