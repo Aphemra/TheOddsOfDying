@@ -6319,12 +6319,12 @@ Prefab:
     - target: {fileID: 114646058400792808, guid: a70e7c621200d6a4896db84799a46eac,
         type: 2}
       propertyPath: dialogue.lines.Array.data[4]
-      value: "Who is Daemian?  That must be your name.\r"
+      value: "Who is David?  That must be your name.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 114646058400792808, guid: a70e7c621200d6a4896db84799a46eac,
         type: 2}
       propertyPath: dialogue.lines.Array.data[3]
-      value: "(Woman) \u201DI love you, Daemian.\u201D\r"
+      value: "(Woman) \u201DI love you, David.\u201D\r"
       objectReference: {fileID: 0}
     - target: {fileID: 114646058400792808, guid: a70e7c621200d6a4896db84799a46eac,
         type: 2}
@@ -29329,7 +29329,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4545560690563344, guid: 7f856152fa77903478fa361cea759739, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -176.672
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 4545560690563344, guid: 7f856152fa77903478fa361cea759739, type: 2}
       propertyPath: m_LocalPosition.y
@@ -29337,7 +29337,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4545560690563344, guid: 7f856152fa77903478fa361cea759739, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -128.028
+      value: 9.33
       objectReference: {fileID: 0}
     - target: {fileID: 4545560690563344, guid: 7f856152fa77903478fa361cea759739, type: 2}
       propertyPath: m_LocalRotation.x
