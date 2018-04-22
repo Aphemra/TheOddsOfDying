@@ -20,7 +20,7 @@ public class PauseMenu : MonoBehaviour {
     {
         Cursor.lockState = CursorLockMode.Locked;//unlock cursor
         Cursor.visible = false;//make cursor visible
-        Time.timeScale = 1f;
+        Time.timeScale = 1;
         pauseMenu.SetActive(false);
     }
 
@@ -45,6 +45,9 @@ public class PauseMenu : MonoBehaviour {
 
     public void ToMainMenu()
     {
+        Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         fader.FadeToScene(0);
     }
 
