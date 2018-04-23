@@ -37,7 +37,7 @@ public class OrbPuzzle : MonoBehaviour {
 
         if (greenDone && blueDone && redDone)
         {
-            this.transform.Translate(Vector3.down * Time.deltaTime);
+            GetComponent<FenceGateAnimController>().puzzleBeat = true;
         }
     }
 }
